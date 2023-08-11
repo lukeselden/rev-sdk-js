@@ -226,6 +226,9 @@ Webcast events
 
 | Name | Type |
 | :------ | :------ |
+| `PlayerStatus` | typeof [`PlayerStatus`](enums/PlayerStatus.md) |
+| `TokenType` | typeof [`TokenType`](enums/TokenType.md) |
+| `WebcastStatus` | typeof [`WebcastStatus`](enums/WebcastStatus.md) |
 | `embedVideo` | (`element`: `string` \| `HTMLElement`, `videoId`: `string`, `config`: [`VbrickVideoEmbedConfig`](interfaces/VbrickVideoEmbedConfig.md)) => [`IVbrickVideoEmbed`](interfaces/IVbrickVideoEmbed.md) |
 | `embedWebcast` | (`element`: `string` \| `HTMLElement`, `webcastId`: `string`, `config`: [`VbrickWebcastEmbedConfig`](interfaces/VbrickWebcastEmbedConfig.md)) => [`IVbrickWebcastEmbed`](interfaces/IVbrickWebcastEmbed.md) |
 
