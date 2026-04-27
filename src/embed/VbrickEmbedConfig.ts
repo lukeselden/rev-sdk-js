@@ -72,6 +72,7 @@ export interface VbrickVideoEmbedConfig extends VbrickBaseEmbedConfig {
 	language?: string;
 	hideSettings?: boolean;
 	hideFullscreen?: boolean;
+	hideVolumeControl?: boolean;
 
 	/**
 	 * shows video player with sidebar.
@@ -141,6 +142,8 @@ export interface VbrickVideoEmbedConfig extends VbrickBaseEmbedConfig {
 	noChapterDisplay?: boolean;
 	/** @deprecated - embed parameter name - alias of hideChapterMenu */
 	noChapterMenu?: boolean;
+	/** @deprecated - embed parameter name - alias of hideVolumeControl */
+	noVolumeControl?: boolean;
 	/** @deprecated - embed parameter name - alias for language */
 	subtitles?: string;
 

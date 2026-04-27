@@ -163,7 +163,7 @@ export abstract class VbrickEmbed<TInfo extends IBasicInfo> implements IVbrickBa
 					return;
 				}
 				this.eventBus.off('playerStatusChanged', volumeCallback);
-				this.setVolume(this.config.initialVolume);
+				this.setVolume(this.config.initialVolume!);
 			};
 			this.eventBus.on('playerStatusChanged', volumeCallback);
 		}
@@ -245,6 +245,7 @@ export abstract class VbrickEmbed<TInfo extends IBasicInfo> implements IVbrickBa
 		noChapterSeek: config.hideChapterNavigation ?? config.noChapterSeek,
 		noChapterDisplay: config.hideChapterImages ?? config.noChapterDisplay,
 		noChapterMenu: config.hideChapterMenu ?? config.noChapterMenu,
+		noVolumeControl: config.hideVolumeControl ?? config.noVolumeControl,
 		sidebarFilterQuery: config.sidebarFilterQuery,
 		startAt: config.startAt,
 		subtitles: config.language ?? config.subtitles,
