@@ -109,11 +109,6 @@ export interface VbrickVideoEmbedConfig extends VbrickBaseEmbedConfig {
 	startAt?: string;
 
 	/**
-	 * Branding Settings. Logo image URL
-	 */
-	logoUrl?: string;
-
-	/**
 	 * Branding Settings. Accent color to use in the player, in HTML #rrggbb format
 	 */
 	accentColor?: string;
