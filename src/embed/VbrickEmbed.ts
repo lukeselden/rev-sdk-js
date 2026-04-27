@@ -247,6 +247,7 @@ export abstract class VbrickEmbed<TInfo extends IBasicInfo> implements IVbrickBa
 		noChapterMenu: config.hideChapterMenu ?? config.noChapterMenu,
 		sidebarFilterQuery: config.sidebarFilterQuery,
 		startAt: config.startAt,
+		subtitles: config.language ?? config.subtitles,
 		// all sidebar tabs are by default true, so only include if explicitly false
 		...config.showFullPlayer && {
 			hideInfo: config.sidebarTabs?.[VideoPlaybackSidebarButton.INFO] === false || config.hideInfo === true,

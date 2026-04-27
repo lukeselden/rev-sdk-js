@@ -277,6 +277,7 @@ export function parseRevUrlForForm(url) {
 		placeholder: 'popOut',
 		startAt: 'startAt',
 		popupAuth: 'popupAuth',
+		subtitles: 'language',
 		enableFullRev: 'showFullWebcast',
 		layout: 'layout',
 		noToolbar: 'hideToolbar',

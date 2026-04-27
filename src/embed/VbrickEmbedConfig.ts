@@ -64,8 +64,12 @@ export interface VbrickVideoEmbedConfig extends VbrickBaseEmbedConfig {
 	hideOverlayControls?: boolean;
 	hidePlayControls?: boolean;
 	hideSubtitles?: boolean;
-	/** Use the Close Captions embedded in video stream as Subtitles */
+	/** Show subtitles by default, instead of only when selected from menu  */
 	forcedCaptions?: boolean;
+	/**
+	 * set preferred subtitles language (match to "language" value of `ISubtitles`). Default is "auto", which uses browser hints.
+	 */
+	language?: string;
 	hideSettings?: boolean;
 	hideFullscreen?: boolean;
 
@@ -137,6 +141,8 @@ export interface VbrickVideoEmbedConfig extends VbrickBaseEmbedConfig {
 	noChapterDisplay?: boolean;
 	/** @deprecated - embed parameter name - alias of hideChapterMenu */
 	noChapterMenu?: boolean;
+	/** @deprecated - embed parameter name - alias for language */
+	subtitles?: string;
 
 	/** @deprecated - embed parameter name - alias for sidebar tab option */
 	hideInfo?: boolean;
