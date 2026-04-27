@@ -308,6 +308,9 @@ export function parseRevUrlForForm(url) {
 			} else if (sidebarConfigMap[key]) {
 				config.sidebarTabs ??= {};
 				config.sidebarTabs[sidebarConfigMap[key]] = !val;
+			} else if (key === 'placeholder') {
+				// special case - must be a string value
+				config[key] = value === true ? 'inline' : value;
 			} else {
 				config[key] = val;
 			}

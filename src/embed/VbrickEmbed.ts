@@ -247,6 +247,7 @@ export abstract class VbrickEmbed<TInfo extends IBasicInfo> implements IVbrickBa
 		noChapterDisplay: config.hideChapterImages ?? config.noChapterDisplay,
 		noChapterMenu: config.hideChapterMenu ?? config.noChapterMenu,
 		noVolumeControl: config.hideVolumeControl ?? config.noVolumeControl,
+		placeholder: config.placeholder,
 		sidebarFilterQuery: config.sidebarFilterQuery,
 		startAt: config.startAt,
 		subtitles: config.language ?? config.subtitles,

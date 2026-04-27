@@ -81,6 +81,11 @@ export interface VbrickVideoEmbedConfig extends VbrickBaseEmbedConfig {
 	 */
 	allowSpeedChanges?: boolean;
 
+	/**
+	 * If placeholder is set to 'inline' then embed will only show a preview image instead of loading the entire player. This is similar to the "Pop-out player" embed option.
+	 * TIP: If you use this option consider setting the "timeoutSeconds" to a higher value, to avoid an error while waiting for the embed to complete loading
+	 */
+	placeholder?: 'inline';
 
 	/**
 	 * shows video player with sidebar.
