@@ -24,6 +24,9 @@ export interface VbrickBaseEmbedConfig extends VbrickSDKConfig {
 	 */
 	height?: string;
 
+	/** Analytics label for when videos viewed via this embed. Default: "Embedded"  */
+	viewContext?: string;
+
 	/**
 	 * do not add the 'local-network-access' Permissions-Policy iframe "allow" attribute.
 	 * This may block ECDN / User Location Services functionality from working properly.
