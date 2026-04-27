@@ -229,6 +229,7 @@ export abstract class VbrickEmbed<TInfo extends IBasicInfo> implements IVbrickBa
 			? (!!config.popupAuth).toString()
 			: undefined,
 		accent: config.accentColor ?? config.accent,
+		allowSpeedChanges: config.allowSpeedChanges,
 		autoplay: config.autoplay,
 		defaultTheme: config.applyDefaultTheme,
 		defaultSidebar: config.defaultSidebar,

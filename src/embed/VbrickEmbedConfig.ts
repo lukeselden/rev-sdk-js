@@ -73,6 +73,11 @@ export interface VbrickVideoEmbedConfig extends VbrickBaseEmbedConfig {
 	hideSettings?: boolean;
 	hideFullscreen?: boolean;
 	hideVolumeControl?: boolean;
+	/**
+	 * allow changing of playback rate
+	 */
+	allowSpeedChanges?: boolean;
+
 
 	/**
 	 * shows video player with sidebar.
