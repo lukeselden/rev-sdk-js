@@ -45,11 +45,11 @@ export abstract class VbrickEmbed<TInfo extends IBasicInfo> implements IVbrickBa
 	}
 	private _info?: TInfo;
 
-	protected iframe: HTMLIFrameElement;
+	protected iframe!: HTMLIFrameElement;
 	protected readonly iframeUrl: string;
-	protected eventBus: EventBus;
+	protected eventBus!: EventBus;
 	private init?: Promise<any>;
-	private unsubscribes: Array<() => void>;
+	private unsubscribes?: Array<() => void>;
 	protected logger: ILogger;
 
 	constructor(
@@ -234,9 +234,9 @@ export abstract class VbrickEmbed<TInfo extends IBasicInfo> implements IVbrickBa
 		defaultTheme: config.applyDefaultTheme,
 		defaultSidebar: config.defaultSidebar,
 		fullPlayer: config.showFullPlayer,
-		mobileLayoutBreakPoint: config.mobileLayoutBreakPoint,
 		forceClosedCaptions: config.forcedCaptions ?? config.forceClosedCaptions,
 		loopVideo: config.playInLoop ?? config.loopVideo,
+		mobileLayoutBreakPoint: config.mobileLayoutBreakPoint,
 		noCc: config.hideSubtitles ?? config.noCc,
 		noCenterButtons: config.hideOverlayControls ?? config.noCenterButtons,
 		noChapters: config.hideChapters ?? config.noChapters,
